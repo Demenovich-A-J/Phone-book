@@ -1,4 +1,4 @@
-﻿namespace Phone_book
+﻿namespace Phone_book.PhoneBookModel
 {
     public enum PhoneNumberType
     {

@@ -1,14 +1,12 @@
-﻿namespace Phone_book
+﻿namespace Phone_book.PhoneBookModel
 {
     public class PhoneNumber
     {
-        private string _number;
-
         public PhoneNumber(string number)
         {
-            _number = number;
+            Number = number;
         }
 
-        public string Number => _number;
+        public string Number { get; }
     }
 }

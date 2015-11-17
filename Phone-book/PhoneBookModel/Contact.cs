@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace Phone_book
+namespace Phone_book.PhoneBookModel
 {
-    public class Contact : IContact
+    public class Contact
     {
-        public Contact(string name, string surName, IDictionary<PhoneNumberType, PhoneNumber> numbers)
+        public Contact(string name, string surName, Dictionary<PhoneNumberType, PhoneNumber> numbers)
         {
             Name = name;
             SurName = surName;
@@ -13,11 +13,11 @@ namespace Phone_book
 
         public string Name { get; }
         public string SurName { get; }
-        public IDictionary<PhoneNumberType, PhoneNumber> Numbers { get; }
+        public Dictionary<PhoneNumberType, PhoneNumber> Numbers { get; }
 
         public void AddNumber(PhoneNumberType type, PhoneNumber number)
         {
-            Numbers.Add(type,number);
+            Numbers.Add(type, number);
         }
     }
 }

@@ -1,2 +1,9 @@
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\Phone-book.exe.config
 C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Phone-book.exe.config
+C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Phone-book.exe
+C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Phone-book.pdb
+C:\Users\Admin\Documents\Phone-book\Phone-book\obj\Debug\Phone-book.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Phone-book\Phone-book\obj\Debug\Phone-book.exe
+C:\Users\Admin\Documents\Phone-book\Phone-book\obj\Debug\Phone-book.pdb
+C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Newtonsoft.Json.xml

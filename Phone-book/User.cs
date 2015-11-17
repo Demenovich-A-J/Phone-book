@@ -1,14 +1,22 @@
-﻿namespace Phone_book
+﻿using Phone_book.PhoneBookModel;
+
+namespace Phone_book
 {
     public class User
     {
-        public User(string name, ITerminal terminal)
+        public User(string name, Terminal terminal)
         {
             Name = name;
-            _terminal = terminal;
+            Terminal = terminal;
         }
 
         public string Name { get; }
-        private ITerminal _terminal;
+
+        public Terminal Terminal { get; }
+
+        public void AddNewContact(Contact contact)
+        {
+            Terminal.Add(contact);
+        }
     }
 }

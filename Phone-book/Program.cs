@@ -10,6 +10,7 @@ namespace Phone_book
     {
         static void Main(string[] args)
         {
+            User u1 = new User("Петя", new Terminal(new PhoneNumber("222-333-444")));
         }
     }
 }

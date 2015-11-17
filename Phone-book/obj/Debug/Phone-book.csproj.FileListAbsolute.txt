@@ -1,1 +1,2 @@
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\Phone-book.exe.config
+C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Phone-book.exe.config

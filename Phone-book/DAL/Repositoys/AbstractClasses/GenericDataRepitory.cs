@@ -6,9 +6,13 @@ using Phone_book.DAL.Repositoys.Intarfaces;
 
 namespace Phone_book.DAL.Repositoys.AbstractClasses
 {
-    public abstract class GenericDataRepitory<T> : IGenericDataRepository<T>
+    public abstract class GenericDataRepitory<T,K> : IGenericDataRepository<T>
         where T : class
+        where K : class
     {
+        protected abstract K ObjectToEntity(T item);
+        protected abstract T EntityToObject(K item);
+
         public virtual IEnumerable<T> GetAll()
         {
             IEnumerable<T> list;
@@ -24,7 +28,12 @@ namespace Phone_book.DAL.Repositoys.AbstractClasses
             IEnumerable<T> list;
             using (var context = new PhoneBookDB())
             {
-                list = context.Set<T>().AsNoTracking().Where(where).ToList();
+                list = context
+                    .Set<K>()
+                    .AsNoTracking()
+                    .Select(EntityToObject)
+                    .Where(where)
+                    .ToList();
             }
             return list;
         }
@@ -35,8 +44,8 @@ namespace Phone_book.DAL.Repositoys.AbstractClasses
             using (var context = new PhoneBookDB())
             {
                 item = context
-                    .Set<T>()
-                    .AsNoTracking()
+                    .Set<K>()
+                    .Select(EntityToObject)
                     .FirstOrDefault(where);
             }
             return item;
@@ -48,7 +57,7 @@ namespace Phone_book.DAL.Repositoys.AbstractClasses
         {
             using (var context = new PhoneBookDB())
             {
-                context.Entry(item).State = EntityState.Added;
+                context.Entry(ObjectToEntity(item)).State = EntityState.Added;
                 context.SaveChanges();
             }
         }
@@ -59,7 +68,7 @@ namespace Phone_book.DAL.Repositoys.AbstractClasses
             {
                 foreach (var item in items)
                 {
-                    context.Entry(item).State = EntityState.Added;
+                    context.Entry(ObjectToEntity(item)).State = EntityState.Added;
                 }
                 context.SaveChanges();
             }
@@ -69,7 +78,7 @@ namespace Phone_book.DAL.Repositoys.AbstractClasses
         {
             using (var context = new PhoneBookDB())
             {
-                context.Entry(item).State = EntityState.Deleted;
+                context.Entry(ObjectToEntity(item)).State = EntityState.Deleted;
                 context.SaveChanges();
             }
         }
@@ -78,7 +87,7 @@ namespace Phone_book.DAL.Repositoys.AbstractClasses
         {
             using (var context = new PhoneBookDB())
             {
-                context.Entry(item).State = EntityState.Modified;
+                context.Entry(ObjectToEntity(item)).State = EntityState.Modified;
                 context.SaveChanges();
             }
         }

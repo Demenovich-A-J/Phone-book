@@ -14,10 +14,10 @@
     <EntitySetMapping Name="Phones">
       <EntityTypeMapping TypeName="PhoneBookDBModel.Phones">
         <MappingFragment StoreEntitySet="Phones">
-          <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Number" ColumnName="Number" />
           <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

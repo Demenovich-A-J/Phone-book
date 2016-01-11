@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cae2ea1e35024065b3175df5be4f3748" Name="Diagram1">
+      <Diagram DiagramId="3fc3964e8d0541069233780d8fd05836" Name="Diagram1">
         <EntityTypeShape EntityType="PhoneBookDBModel.Contacts" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PhoneBookDBModel.Phones" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhoneBookDBModel.Phones" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PhoneBookDBModel.User" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="PhoneBookDBModel.FK_Contacts_User" ManuallyRouted="false" />
         <AssociationConnector Association="PhoneBookDBModel.FK_Phones_Contacts" ManuallyRouted="false" />

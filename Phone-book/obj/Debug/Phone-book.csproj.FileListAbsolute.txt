@@ -9,8 +9,6 @@ C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Admin\Documents\Phone-book\Phone-book\bin\Debug\Newtonsoft.Json.xml
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\Phone-book.exe
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\Phone-book.pdb
-D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\Newtonsoft.Json.dll
-D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\Newtonsoft.Json.xml
 D:\SourceTreeProjects\Phone-book\Phone-book\obj\Debug\Phone-book.csprojResolveAssemblyReference.cache
 D:\SourceTreeProjects\Phone-book\Phone-book\obj\Debug\Phone-book.exe
 D:\SourceTreeProjects\Phone-book\Phone-book\obj\Debug\Phone-book.pdb
@@ -18,3 +16,7 @@ D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\EntityFramework.dll
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\EntityFramework.SqlServer.dll
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\EntityFramework.xml
 D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\EntityFramework.SqlServer.xml
+D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\AutoMapper.dll
+D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\AutoMapper.xml
+D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\ru\EntityFramework.resources.dll
+D:\SourceTreeProjects\Phone-book\Phone-book\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
